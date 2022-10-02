@@ -1,0 +1,282 @@
+body {
+  background-image: url("../pictures/ladrillo.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  height: 100vh;
+
+}
+
+nav {
+  position: fixed;
+  width: 100vw;
+  height: 8vh;
+  background-color: rgb(21, 5, 76, 0.85);
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  left: -5px;
+  letter-spacing: 1px;
+  font-size: 20px;
+  font-weight: bold;
+  align-items: center;
+  color: #ffffff;
+  flex-wrap: wrap;
+  z-index: 1;
+}
+
+nav :hover {
+  text-shadow: 1px 1px 1px white;
+}
+
+.nav-link {
+  padding: 0vw 2vw;
+}
+
+#about {
+  height: 100vh;
+  padding: 11vh 2vh 2vh 2vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.about-sect-img {
+  width: 50%;
+  text-align: right;
+  justify-content: center;
+  /* vertical-align: center; */
+  padding: 20px;
+}
+
+.dev-img-top {
+  width: 65%;
+  max-width: 600px;
+  border-radius: 50%;
+}
+
+/* .about-sect {
+    width: 50%;
+    font-weight: bold;
+    justify-content: center;
+    vertical-align: center;
+} */
+
+#about h1 {
+  color: rgb(21, 5, 76);
+  letter-spacing: 0.5px;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+#about .about-sect .name {
+  color: rgba(154, 3, 30);
+  font-size: 2.5rem;
+}
+
+#about .about-sect .italic {
+  font-style: italic;
+}
+
+#projects {
+  text-align: center;
+  min-height: 100vh;
+  padding: 11vh 2vh 2vh 2vh;
+}
+
+#projects h1 {
+  color: rgb(21, 5, 76);
+  letter-spacing: 0.5px;
+  font-size: 2rem;
+  font-weight: bold;
+  padding-bottom: 5px;
+}
+
+.cards {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  z-index: -1;
+}
+
+.card {
+  width: 45%;
+  max-width: 500px;
+  background-color: rgba(255, 255, 255, 0.7);
+  box-shadow: 0 0.15rem 0.6rem rgba(43, 52, 56, 0.15);
+  border: none;
+  padding: 1.5vh;
+  margin: 1vh;
+  align-items: center;
+}
+
+.card-img-top {
+  max-width: 500px;
+}
+
+.card-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 1px;
+}
+
+#projects h5 {
+  color: rgb(21, 5, 76);
+  letter-spacing: 0.3px;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+#contact {
+  padding: 10vh 2vh 1vh 2vh;
+  color: rgb(8, 24, 33);
+  letter-spacing: 1px;
+  font-size: 20px;
+  font-weight: bold;
+  width: 100vw;
+  height: 91vh;
+  text-align: center;
+}
+
+#contact form {
+  max-width: 350px;
+  text-align: center;
+  margin: 0 auto;
+  background-color: rgba(255, 255, 255, 0.7);
+  border-radius: 6px;
+  box-shadow: 0 0.15rem 0.6rem rgba(43, 52, 56, 0.15);
+  padding: 1.4rem;
+}
+
+#contact #contact-form h4 {
+  color: rgb(21, 5, 76);
+  letter-spacing: 0.5px;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+#submit {
+  width: 100%;
+}
+
+#contact form .form-inputs input {
+  margin: 0.25rem 0;
+  width: 100%;
+  border-radius: 3px;
+  border: 1px solid black;
+  padding: 0.5rem;
+  font-size: 1rem;
+}
+
+#contact form .form-inputs input:focus {
+  outline: none;
+}
+
+#contact form .form-inputs textarea {
+  width: 100%;
+  border-radius: 3px;
+  margin: 0.25rem 0;
+  border: 1px solid black;
+  padding: 0.5rem;
+  font-size: 1rem;
+  resize: vertical;
+}
+
+#contact form .form-inputs textarea:focus {
+  outline: none;
+}
+
+.contact-details {
+  width: fit-content;
+  font-size: 22px;
+  font-weight: bold;
+  margin-top: 25px;
+  padding: 20px;
+}
+.contact-options :hover{
+text-shadow: 0.5px 0.5px 3px rgba(0,0,0,0.5);
+}
+
+.btn-primary {
+  width: 100px;
+  font-weight:500;
+  background-color: #85AFFF;
+  backdrop-filter: blur(1px);
+  border: #70A2FF;
+  --bs-btn-hover-bg:#5c95ff;
+}
+
+.footer {
+  height: 6vh;
+  background-color: rgb(21, 5, 76, 0.7);;
+  letter-spacing: 1px;
+  font-size: 12px;
+  color: white;
+  text-align: center;
+}
+
+.footer p {
+  margin: 0;
+}
+
+@media (max-width: 800px) {
+  body{
+    background-position: right;
+  }
+  nav {
+    justify-content: space-around;
+    letter-spacing: 0px;
+    text-align: center;
+    left: 0px;
+  }
+
+  .about-sect {
+    width: 100%;
+    text-align: center;
+  }
+
+  .about-sect-img {
+    width: 100%;
+    max-width: 600px;
+    text-align: center;
+    padding: 0px;
+  }
+
+  .card {
+    width: 95%;
+  }
+
+  #about {
+    flex-direction: column-reverse;
+    justify-content: center;
+  }
+
+  #about .about-sect .name {
+    font-size: 2.4rem;
+  }
+
+  #contact {
+    height: 91vh;
+  }
+
+  .contact-details {
+    font-size: 20px;
+    margin-top: 10px;
+    padding: 0px;
+  }
+
+  .contact-options {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .btn-primary {
+    width: fit-content;
+    min-width: 80px;
+  }
+  
+}
