@@ -56,13 +56,6 @@ nav :hover {
   border-radius: 50%;
 }
 
-/* .about-sect {
-    width: 50%;
-    font-weight: bold;
-    justify-content: center;
-    vertical-align: center;
-} */
-
 #about h1 {
   color: rgb(21, 5, 76);
   letter-spacing: 0.5px;
@@ -82,7 +75,7 @@ nav :hover {
 #projects {
   text-align: center;
   min-height: 100vh;
-  padding: 11vh 2vh 2vh 2vh;
+  padding: 11vh 2vh 15vh 2vh;
 }
 
 #projects h1 {
