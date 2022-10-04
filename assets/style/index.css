@@ -130,7 +130,7 @@ nav :hover {
   font-size: 20px;
   font-weight: bold;
   width: 100vw;
-  height: 86vh;
+  height: 91vh;
   text-align: center;
 }
 
@@ -203,7 +203,7 @@ text-shadow: 0.5px 0.5px 3px rgba(0,0,0,0.5);
 }
 
 .footer {
-  height: 14vh;
+  height: 9vh;
   position: relative;
   bottom: 0;
   background-color: rgb(21, 5, 76, 0.7);;
